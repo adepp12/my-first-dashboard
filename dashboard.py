@@ -59,7 +59,7 @@ def create_avg_weekly_rent_bike_df(df):
     return avg_weekly_rent_bike_df
 
 #membaca main_data.csv
-main_df = pd.read_csv("main_data.csv")
+main_df = pd.read_csv("https://drive.google.com/uc?id=1IyvSWciAO3UZWxyJeXE6ilcFpVFg_KbG")
 
 #menghasilkan berbagai DataFrame yang dibutuhkan untuk membuat visualisasi data.
 monthly_rent_bike_11_df = create_monthly_rent_bike_11_df(main_df)
