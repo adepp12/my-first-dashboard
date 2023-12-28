@@ -4,8 +4,8 @@ Final project of the Data Analysis with Python class - Dicoding Indonesia
 
 ## Setup virtual environment
 ```
-- pip install env
-- pipenv shell
+pip install env
+pipenv shell
 ```
 ## Install depedency
 ```
