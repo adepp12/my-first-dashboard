@@ -2,12 +2,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
-import dotenv
-import os
-sns.set(style='dark')
 
-#memuat variabel dari file .env
-dotenv.load_dotenv()
+sns.set(style='dark')
 
 #menyiapkan monthly_rent_bike_11_df
 def create_monthly_rent_bike_11_df(df):
@@ -64,8 +60,8 @@ def create_avg_weekly_rent_bike_df(df):
     return avg_weekly_rent_bike_df
 
 #membaca main_data.csv
-url_dataset = os.getenv("URL_DATASET")
-main_df = pd.read_csv(url_dataset)
+# url_dataset = os.getenv("URL_DATASET")
+main_df = pd.read_csv("https://drive.google.com/uc?id=1IyvSWciAO3UZWxyJeXE6ilcFpVFg_KbG")
 
 #menghasilkan berbagai DataFrame yang dibutuhkan untuk membuat visualisasi data.
 monthly_rent_bike_11_df = create_monthly_rent_bike_11_df(main_df)
